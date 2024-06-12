@@ -1,0 +1,755 @@
+24-06-12.00:43:03.484 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 21068 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.00:43:03.485 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.00:43:03.924 [main            ] ERROR SpringApplication      - Application run failed
+java.lang.IllegalArgumentException: Bean name must not be empty
+	at org.springframework.util.Assert.hasText(Assert.java:289)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:990)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:295)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.zht.Application.main(Application.java:11)
+24-06-12.00:43:46.549 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 23200 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.00:43:46.550 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.00:43:47.056 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.00:43:47.057 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.00:43:47.073 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+24-06-12.00:43:47.357 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.00:43:47.362 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.00:43:47.363 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.00:43:47.363 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.00:43:47.445 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.00:43:47.445 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 867 ms
+24-06-12.00:43:47.865 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.00:43:48.505 [redisson-netty-1-20] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.00:43:48.506 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.00:43:48.553 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.00:43:48.803 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.00:43:48.822 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.00:43:48.829 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.00:43:48.841 [main            ] INFO  Application            - Started Application in 2.603 seconds (JVM running for 3.456)
+24-06-12.00:43:49.387 [RMI TCP Connection(2)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.00:43:49.388 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.00:43:49.389 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.00:44:38.563 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.00:44:38.566 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.00:44:38.567 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.00:44:53.792 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.00:44:53.794 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.00:44:53.796 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.00:45:00.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.00:45:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.00:45:00.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.00:45:20.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.00:45:20.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.00:45:20.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.11:51:15.381 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 19572 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.11:51:15.383 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.11:51:16.045 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.11:51:16.047 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.11:51:16.064 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+24-06-12.11:51:16.412 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.11:51:16.421 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.11:51:16.421 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.11:51:16.421 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.11:51:16.703 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.11:51:16.703 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1275 ms
+24-06-12.11:51:17.208 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.11:51:17.779 [redisson-netty-1-12] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.11:51:17.786 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.11:51:17.837 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.11:51:18.149 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.11:51:18.169 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.11:51:18.176 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.11:51:18.189 [main            ] INFO  Application            - Started Application in 3.42 seconds (JVM running for 4.262)
+24-06-12.11:51:19.189 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.11:51:19.189 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.11:51:19.190 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.11:51:20.129 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.11:51:20.131 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.11:51:20.133 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:15:43.158 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20312 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:15:43.160 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:15:43.638 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:15:43.640 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:15:43.653 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.14:15:43.898 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:15:43.904 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:15:43.904 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:15:43.904 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:15:43.986 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:15:43.986 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 799 ms
+24-06-12.14:15:44.229 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:15:44.770 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:15:44.781 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:15:45.191 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:15:45.205 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:15:45.212 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:15:45.222 [main            ] INFO  App                    - Started App in 2.372 seconds (JVM running for 3.185)
+24-06-12.14:15:46.532 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:15:46.532 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:15:46.533 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:30:57.918 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 1480 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:30:57.920 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:30:58.341 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:30:58.342 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:30:58.354 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.14:30:58.562 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:30:58.567 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:30:58.567 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:30:58.567 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:30:58.635 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:30:58.636 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 692 ms
+24-06-12.14:30:58.825 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:30:59.335 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:30:59.346 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:30:59.686 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:30:59.700 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:30:59.706 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:30:59.716 [main            ] INFO  App                    - Started App in 2.052 seconds (JVM running for 2.756)
+24-06-12.14:31:00.930 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:31:00.930 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:31:00.933 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 3 ms
+24-06-12.14:31:13.252 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 19488 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:31:13.254 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.14:31:13.734 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:31:13.735 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:31:13.750 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+24-06-12.14:31:14.013 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.14:31:14.017 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.14:31:14.018 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:31:14.018 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:31:14.103 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:31:14.103 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 826 ms
+24-06-12.14:31:14.474 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:31:15.020 [redisson-netty-1-15] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.14:31:15.024 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.14:31:15.068 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.14:31:15.307 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:31:15.324 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.14:31:15.331 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.14:31:15.342 [main            ] INFO  Application            - Started Application in 2.333 seconds (JVM running for 3.049)
+24-06-12.14:31:16.161 [RMI TCP Connection(1)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:31:16.161 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:31:16.162 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:31:20.089 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:31:20.093 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:31:20.095 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:31:40.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:31:40.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:31:40.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:32:00.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:32:00.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:32:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:32:20.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:32:20.006 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:32:20.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:32:23.927 [http-nio-8089-exec-5] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:25.227 [http-nio-8089-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:25.864 [http-nio-8089-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:26.133 [http-nio-8089-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:26.557 [http-nio-8089-exec-8] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:26.903 [http-nio-8089-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:40.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:32:40.024 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:32:40.029 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:33:00.005 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:33:00.007 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:33:00.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:33:05.638 [http-nio-8089-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.181 [http-nio-8089-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.354 [http-nio-8089-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.516 [http-nio-8089-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.673 [http-nio-8089-exec-5] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.838 [http-nio-8089-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:07.001 [http-nio-8089-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:07.172 [http-nio-8089-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:10.259 [http-nio-8089-exec-8] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:11.218 [http-nio-8089-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:11.608 [http-nio-8089-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:35:07.122 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 21192 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:35:07.123 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.14:35:07.567 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:35:07.569 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:35:07.582 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+24-06-12.14:35:07.821 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.14:35:07.825 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.14:35:07.826 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:35:07.826 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:35:07.900 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:35:07.900 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 752 ms
+24-06-12.14:35:08.235 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:35:08.713 [redisson-netty-1-15] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.14:35:08.716 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.14:35:08.761 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.14:35:08.993 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:35:09.007 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.14:35:09.013 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.14:35:09.022 [main            ] INFO  Application            - Started Application in 2.149 seconds (JVM running for 3.059)
+24-06-12.14:35:09.477 [RMI TCP Connection(1)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:35:09.477 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:35:09.478 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:35:13.607 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 9292 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:35:13.608 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:35:14.021 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:35:14.023 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:35:14.034 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.14:35:14.243 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:35:14.247 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:35:14.248 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:35:14.248 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:35:14.316 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:35:14.317 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 685 ms
+24-06-12.14:35:14.515 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:35:14.995 [redisson-netty-1-6] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:35:15.004 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:35:15.344 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:35:15.357 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:35:15.363 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:35:15.372 [main            ] INFO  App                    - Started App in 2.008 seconds (JVM running for 2.726)
+24-06-12.14:35:16.415 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:35:16.415 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:35:16.416 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:35:20.068 [http-nio-8089-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:35:20.072 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:35:20.075 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:35:20.076 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:35:34.834 [http-nio-8089-exec-2] INFO  Cookie                 - A cookie header was received [Hm_lvt_8c8d73183929fe9e009a014e6f035f12=1712489970,1712740090;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+24-06-12.14:35:34.836 [http-nio-8089-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:35:40.004 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:35:40.008 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:35:40.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:38:25.741 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 13880 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:38:25.743 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:38:26.166 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:38:26.167 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:38:26.179 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.14:38:26.394 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:38:26.399 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:38:26.399 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:38:26.399 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:38:26.471 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:38:26.471 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 704 ms
+24-06-12.14:38:26.674 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:38:27.272 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:38:27.287 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:38:27.689 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:38:27.702 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:38:27.707 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:38:27.715 [main            ] INFO  App                    - Started App in 2.223 seconds (JVM running for 2.927)
+24-06-12.14:38:28.733 [http-nio-8089-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:38:28.733 [http-nio-8089-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:38:28.734 [http-nio-8089-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:39:54.308 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 19072 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:39:54.309 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:39:54.752 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:39:54.753 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:39:54.764 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.14:39:54.967 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:39:54.971 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:39:54.971 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:39:54.971 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:39:55.041 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:39:55.041 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 705 ms
+24-06-12.14:39:55.246 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:39:55.823 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:39:55.835 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:39:56.221 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:39:56.234 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:39:56.240 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:39:56.248 [main            ] INFO  App                    - Started App in 2.185 seconds (JVM running for 2.871)
+24-06-12.14:39:56.915 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:39:56.915 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:39:56.916 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:43:02.774 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20912 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:43:02.775 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:43:03.203 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:43:03.205 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:43:03.216 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.14:43:03.438 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:43:03.442 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:43:03.443 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:43:03.443 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:43:03.513 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:43:03.514 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 715 ms
+24-06-12.14:43:03.730 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:43:04.339 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:43:04.351 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:43:04.720 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:43:04.736 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:43:04.741 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:43:04.750 [main            ] INFO  App                    - Started App in 2.228 seconds (JVM running for 2.921)
+24-06-12.14:43:05.264 [RMI TCP Connection(4)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:43:05.264 [RMI TCP Connection(4)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:43:05.265 [RMI TCP Connection(4)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:55:09.259 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20860 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:55:09.260 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.14:55:09.696 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:55:09.698 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:55:09.710 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.14:55:09.959 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.14:55:09.963 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.14:55:09.964 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:55:09.964 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:55:10.041 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:55:10.041 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 757 ms
+24-06-12.14:55:10.406 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:55:10.924 [redisson-netty-1-18] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.14:55:10.925 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.14:55:10.969 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.14:55:11.204 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:55:11.220 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.14:55:11.227 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.14:55:11.238 [main            ] INFO  Application            - Started Application in 2.219 seconds (JVM running for 2.939)
+24-06-12.14:55:12.148 [RMI TCP Connection(2)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:55:12.148 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:55:12.149 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.14:55:20.132 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:55:20.135 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:55:20.136 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:55:40.082 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:55:40.085 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:55:40.087 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:56:00.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:56:00.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:56:00.025 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:56:20.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:56:20.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:56:20.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:56:40.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:56:40.014 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:56:40.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:56:53.243 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20544 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.14:56:53.244 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.14:56:53.678 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.14:56:53.679 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.14:56:53.690 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.14:56:53.941 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.14:56:53.947 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.14:56:53.947 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.14:56:53.947 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.14:56:54.034 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.14:56:54.034 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 764 ms
+24-06-12.14:56:54.416 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.14:56:55.023 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:56:55.033 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.14:56:55.384 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.14:56:55.398 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.14:56:55.404 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.14:56:55.413 [main            ] INFO  App                    - Started App in 2.428 seconds (JVM running for 3.149)
+24-06-12.14:56:55.458 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.14:56:55.458 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.14:56:55.458 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 0 ms
+24-06-12.14:57:00.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:57:00.027 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:57:00.027 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.14:57:20.033 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.14:57:20.034 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.14:57:20.035 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:11:06.844 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 6296 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:11:06.845 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:11:07.365 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:11:07.367 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:11:07.390 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+24-06-12.15:11:07.670 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:11:07.675 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:11:07.676 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:11:07.676 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:11:07.759 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:11:07.759 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 883 ms
+24-06-12.15:11:08.156 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:11:08.655 [redisson-netty-1-18] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:11:08.657 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:11:08.703 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:11:08.974 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:11:08.991 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:11:08.998 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:11:09.009 [main            ] INFO  Application            - Started Application in 2.485 seconds (JVM running for 3.347)
+24-06-12.15:11:09.714 [RMI TCP Connection(1)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:11:09.714 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:11:09.715 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:12:56.155 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:12:56.157 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:12:56.159 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:14:14.571 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 13504 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:14:14.572 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:14:15.072 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:14:15.073 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:14:15.095 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+24-06-12.15:14:15.369 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:14:15.375 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:14:15.375 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:14:15.375 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:14:15.457 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:14:15.458 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 858 ms
+24-06-12.15:14:15.873 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:14:16.378 [redisson-netty-1-23] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:14:16.379 [redisson-netty-1-22] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:14:16.425 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:14:16.697 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:14:16.716 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:14:16.723 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:14:16.734 [main            ] INFO  Application            - Started Application in 2.459 seconds (JVM running for 3.293)
+24-06-12.15:14:17.493 [RMI TCP Connection(2)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:14:17.493 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:14:17.494 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:14:49.173 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:14:49.175 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:14:49.176 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:15:31.266 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:15:31.267 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:15:31.268 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:16:00.935 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 16188 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:16:00.937 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:16:01.386 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:16:01.387 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:16:01.399 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:16:01.649 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:16:01.653 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:16:01.654 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:16:01.654 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:16:01.732 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:16:01.732 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 773 ms
+24-06-12.15:16:02.063 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:16:02.587 [redisson-netty-1-17] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:16:02.589 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:16:02.631 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:16:02.857 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:16:02.873 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:16:02.878 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:16:02.889 [main            ] INFO  Application            - Started Application in 2.204 seconds (JVM running for 3.013)
+24-06-12.15:16:03.822 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:16:03.823 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:16:03.824 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:16:05.346 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20548 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:16:05.348 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.15:16:05.829 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:16:05.830 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:16:05.842 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.15:16:06.055 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.15:16:06.059 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.15:16:06.059 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:16:06.059 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:16:06.131 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:16:06.132 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 759 ms
+24-06-12.15:16:06.337 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:16:06.869 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:16:06.888 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:16:07.255 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:16:07.270 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.15:16:07.276 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.15:16:07.285 [main            ] INFO  App                    - Started App in 2.195 seconds (JVM running for 2.939)
+24-06-12.15:16:07.879 [RMI TCP Connection(2)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:16:07.879 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:16:07.880 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:16:20.118 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:16:20.122 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:16:20.124 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:16:40.027 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:16:40.031 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:16:40.037 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:17:00.032 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:17:00.037 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:17:00.040 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:17:20.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:17:20.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:17:20.024 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:21:43.634 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20816 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:21:43.635 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.15:21:44.152 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:21:44.154 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:21:44.167 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:21:44.389 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.15:21:44.393 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.15:21:44.394 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:21:44.394 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:21:44.470 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:21:44.470 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 812 ms
+24-06-12.15:21:44.677 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:21:45.243 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:21:45.254 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:21:45.614 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:21:45.627 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.15:21:45.633 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.15:21:45.641 [main            ] INFO  App                    - Started App in 2.25 seconds (JVM running for 2.963)
+24-06-12.15:21:46.327 [http-nio-8089-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:21:46.327 [http-nio-8089-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:21:46.328 [http-nio-8089-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:21:47.716 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 7244 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:21:47.718 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:21:48.165 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:21:48.166 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:21:48.179 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:21:48.404 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:21:48.408 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:21:48.408 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:21:48.408 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:21:48.477 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:21:48.477 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 735 ms
+24-06-12.15:21:48.818 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:21:49.326 [redisson-netty-1-16] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:21:49.330 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:21:49.374 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:21:49.629 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:21:49.647 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:21:49.653 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:21:49.664 [main            ] INFO  Application            - Started Application in 2.194 seconds (JVM running for 3.016)
+24-06-12.15:21:50.497 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:21:50.497 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:21:50.498 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:22:00.103 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:22:00.107 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:22:00.108 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:22:20.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:22:20.028 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:22:20.029 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:22:40.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:22:40.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:22:40.016 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:23:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":50,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:23:00.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":50,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:23:00.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:24:30.132 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 3088 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:24:30.134 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:24:30.584 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:24:30.585 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:24:30.597 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:24:30.836 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:24:30.840 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:24:30.840 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:24:30.841 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:24:30.916 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:24:30.916 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 757 ms
+24-06-12.15:24:31.264 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:24:31.772 [redisson-netty-1-16] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:24:31.774 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:24:31.816 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:24:32.059 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:24:32.076 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:24:32.081 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:24:32.092 [main            ] INFO  Application            - Started Application in 2.207 seconds (JVM running for 3.012)
+24-06-12.15:24:32.614 [RMI TCP Connection(1)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:24:32.614 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:24:32.615 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:24:36.275 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 20028 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:24:36.276 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.15:24:36.689 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:24:36.690 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:24:36.701 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+24-06-12.15:24:36.901 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.15:24:36.905 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.15:24:36.905 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:24:36.905 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:24:36.971 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:24:36.971 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 672 ms
+24-06-12.15:24:37.173 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:24:37.662 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:24:37.672 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:24:38.006 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:24:38.019 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.15:24:38.024 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.15:24:38.033 [main            ] INFO  App                    - Started App in 1.997 seconds (JVM running for 2.684)
+24-06-12.15:24:39.045 [RMI TCP Connection(2)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:24:39.045 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:24:39.046 [RMI TCP Connection(2)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:24:40.107 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:24:40.113 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:24:40.117 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:25:00.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:25:00.020 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:25:00.022 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:25:20.009 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:25:20.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:25:20.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:25:40.013 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:25:40.017 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:25:40.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:26:00.022 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:26:00.025 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:26:00.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:26:20.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:26:20.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":30,"maximumPoolSize":100,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:26:20.025 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:37:08.071 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 19472 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:37:08.073 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.15:37:08.545 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:37:08.546 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:37:08.560 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:37:08.785 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.15:37:08.789 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.15:37:08.790 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:37:08.790 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:37:08.860 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:37:08.861 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 759 ms
+24-06-12.15:37:09.061 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:37:09.650 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:37:09.661 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:37:10.009 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:37:10.023 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.15:37:10.028 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.15:37:10.037 [main            ] INFO  App                    - Started App in 2.228 seconds (JVM running for 2.962)
+24-06-12.15:37:10.672 [RMI TCP Connection(1)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:37:10.672 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:37:10.673 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:37:11.943 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 21192 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:37:11.945 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:37:12.381 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:37:12.382 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:37:12.394 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:37:12.626 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:37:12.630 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:37:12.630 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:37:12.631 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:37:12.702 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:37:12.702 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 730 ms
+24-06-12.15:37:13.054 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:37:13.562 [redisson-netty-1-16] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:37:13.565 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:37:13.608 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:37:13.856 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:37:13.872 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:37:13.878 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:37:13.889 [main            ] INFO  Application            - Started Application in 2.184 seconds (JVM running for 2.946)
+24-06-12.15:37:15.148 [RMI TCP Connection(3)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:37:15.148 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:37:15.149 [RMI TCP Connection(3)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:37:20.079 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:37:20.082 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:37:20.084 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:37:40.030 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:37:40.032 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:37:40.033 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:38:00.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:38:00.028 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:38:00.029 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:40:57.642 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 19952 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:40:57.644 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:40:58.177 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:40:58.179 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:40:58.201 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+24-06-12.15:40:58.486 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:40:58.491 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:40:58.491 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:40:58.491 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:40:58.572 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:40:58.573 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 903 ms
+24-06-12.15:40:58.957 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:40:59.648 [redisson-netty-1-13] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:40:59.655 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:40:59.700 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:40:59.833 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 3532 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:40:59.834 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.15:40:59.960 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:40:59.977 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:40:59.983 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:40:59.994 [main            ] INFO  Application            - Started Application in 2.591 seconds (JVM running for 3.296)
+24-06-12.15:41:00.106 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":1,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":1,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:41:00.116 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":1,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":1,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:41:00.118 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:41:00.267 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:41:00.268 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:41:00.281 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:41:00.503 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.15:41:00.508 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.15:41:00.508 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:41:00.508 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:41:00.583 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:41:00.584 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 725 ms
+24-06-12.15:41:00.796 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:41:01.306 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:41:01.318 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:41:01.682 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:41:01.696 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.15:41:01.702 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.15:41:01.710 [main            ] INFO  App                    - Started App in 2.134 seconds (JVM running for 3.007)
+24-06-12.15:41:02.160 [RMI TCP Connection(1)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:41:02.160 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:41:02.161 [RMI TCP Connection(1)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:41:20.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":587,"queueType":"LinkedBlockingQueue","remainingCapacity":4413,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:41:20.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":587,"queueType":"LinkedBlockingQueue","remainingCapacity":4413,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:41:20.015 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:41:40.010 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1211,"queueType":"LinkedBlockingQueue","remainingCapacity":3789,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:41:40.011 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1211,"queueType":"LinkedBlockingQueue","remainingCapacity":3789,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:41:40.012 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:42:00.031 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1752,"queueType":"LinkedBlockingQueue","remainingCapacity":3248,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:42:00.034 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1752,"queueType":"LinkedBlockingQueue","remainingCapacity":3248,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:42:00.035 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:43:34.373 [main            ] INFO  App                    - Starting App using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 19452 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-admin\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:43:34.375 [main            ] INFO  App                    - The following 1 profile is active: "dev"
+24-06-12.15:43:34.824 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:43:34.825 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:43:34.839 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+24-06-12.15:43:35.048 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8089 (http)
+24-06-12.15:43:35.052 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8089"]
+24-06-12.15:43:35.053 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:43:35.053 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:43:35.134 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:43:35.134 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 733 ms
+24-06-12.15:43:35.451 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:43:36.081 [redisson-netty-1-5] INFO  ConnectionsHolder      - 1 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:43:36.092 [redisson-netty-1-14] INFO  ConnectionsHolder      - 5 connections initialized for localhost/127.0.0.1:6379
+24-06-12.15:43:36.462 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:43:36.477 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8089"]
+24-06-12.15:43:36.482 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8089 (http) with context path ''
+24-06-12.15:43:36.491 [main            ] INFO  App                    - Started App in 2.382 seconds (JVM running for 3.106)
+24-06-12.15:43:37.527 [RMI TCP Connection(5)-2.0.0.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+24-06-12.15:43:37.527 [RMI TCP Connection(5)-2.0.0.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+24-06-12.15:43:37.528 [RMI TCP Connection(5)-2.0.0.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+24-06-12.15:43:39.201 [main            ] INFO  Application            - Starting Application using Java 1.8.0_281 on DESKTOP-VBDSNQ7 with PID 21204 (T:\JAVA\CODE\Study\dynamic-thread-pool\dynamic-thread-pool-test\target\classes started by History in T:\JAVA\CODE\Study\dynamic-thread-pool)
+24-06-12.15:43:39.202 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-06-12.15:43:39.676 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-06-12.15:43:39.677 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-06-12.15:43:39.691 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+24-06-12.15:43:39.946 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-06-12.15:43:39.951 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-06-12.15:43:39.952 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-06-12.15:43:39.952 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-06-12.15:43:40.031 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-06-12.15:43:40.031 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 800 ms
+24-06-12.15:43:40.417 [main            ] INFO  Version                - Redisson 3.26.0
+24-06-12.15:43:41.033 [redisson-netty-1-16] INFO  ConnectionsHolder      - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:43:41.038 [redisson-netty-1-23] INFO  ConnectionsHolder      - 10 connections initialized for 127.0.0.1/127.0.0.1:6379
+24-06-12.15:43:41.083 [main            ] INFO  DynamicThreadPoolAutoConfig - 动态线程池，注册器（redis）链接初始化完成。127.0.0.1 64 true
+24-06-12.15:43:41.333 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-06-12.15:43:41.351 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-06-12.15:43:41.357 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-06-12.15:43:41.368 [main            ] INFO  Application            - Started Application in 2.424 seconds (JVM running for 3.18)
+24-06-12.15:44:00.254 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":546,"queueType":"LinkedBlockingQueue","remainingCapacity":4454,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:44:00.260 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":546,"queueType":"LinkedBlockingQueue","remainingCapacity":4454,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:44:00.263 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:44:20.030 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1245,"queueType":"LinkedBlockingQueue","remainingCapacity":3755,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:44:20.032 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1245,"queueType":"LinkedBlockingQueue","remainingCapacity":3755,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:44:20.033 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:44:40.023 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1973,"queueType":"LinkedBlockingQueue","remainingCapacity":3027,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:44:40.025 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":1973,"queueType":"LinkedBlockingQueue","remainingCapacity":3027,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:44:40.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:45:00.066 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":2698,"queueType":"LinkedBlockingQueue","remainingCapacity":2302,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:45:00.067 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":2698,"queueType":"LinkedBlockingQueue","remainingCapacity":2302,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:45:00.068 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:45:20.018 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":3426,"queueType":"LinkedBlockingQueue","remainingCapacity":1574,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:45:20.019 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":3426,"queueType":"LinkedBlockingQueue","remainingCapacity":1574,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:45:20.021 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:45:40.035 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":4156,"queueType":"LinkedBlockingQueue","remainingCapacity":844,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:45:40.037 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":4156,"queueType":"LinkedBlockingQueue","remainingCapacity":844,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:45:40.038 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:46:00.035 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":4808,"queueType":"LinkedBlockingQueue","remainingCapacity":192,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:46:00.037 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":20,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":20,"queueSize":4808,"queueType":"LinkedBlockingQueue","remainingCapacity":192,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:46:00.037 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:46:20.025 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":50,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":50,"queueSize":4961,"queueType":"LinkedBlockingQueue","remainingCapacity":39,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:46:20.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":50,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":50,"queueSize":4961,"queueType":"LinkedBlockingQueue","remainingCapacity":39,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:46:20.027 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}
+24-06-12.15:46:40.026 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池信息：[{"activeCount":50,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":50,"queueSize":4948,"queueType":"LinkedBlockingQueue","remainingCapacity":52,"threadPoolName":"threadPoolExecutor01"},{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}]
+24-06-12.15:46:40.027 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":50,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":50,"queueSize":4948,"queueType":"LinkedBlockingQueue","remainingCapacity":52,"threadPoolName":"threadPoolExecutor01"}
+24-06-12.15:46:40.028 [scheduling-1    ] INFO  ThreadPoolDataReportJob - 动态线程池，上报线程池配置：{"activeCount":0,"appName":"dynamic-thread-pool-test-app","corePoolSize":20,"maximumPoolSize":50,"poolSize":0,"queueSize":0,"queueType":"LinkedBlockingQueue","remainingCapacity":5000,"threadPoolName":"threadPoolExecutor02"}

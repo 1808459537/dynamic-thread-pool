@@ -1,0 +1,39 @@
+24-06-12.00:43:03.924 [main            ] ERROR SpringApplication      - Application run failed
+java.lang.IllegalArgumentException: Bean name must not be empty
+	at org.springframework.util.Assert.hasText(Assert.java:289)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition(DefaultListableBeanFactory.java:990)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:295)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:153)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.zht.Application.main(Application.java:11)
+24-06-12.14:32:23.927 [http-nio-8089-exec-5] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:25.227 [http-nio-8089-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:25.864 [http-nio-8089-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:26.133 [http-nio-8089-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:26.557 [http-nio-8089-exec-8] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:32:26.903 [http-nio-8089-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:05.638 [http-nio-8089-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.181 [http-nio-8089-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.354 [http-nio-8089-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.516 [http-nio-8089-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.673 [http-nio-8089-exec-5] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:06.838 [http-nio-8089-exec-4] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:07.001 [http-nio-8089-exec-6] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:07.172 [http-nio-8089-exec-7] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:10.259 [http-nio-8089-exec-8] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:11.218 [http-nio-8089-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:33:11.608 [http-nio-8089-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:35:20.068 [http-nio-8089-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
+24-06-12.14:35:34.836 [http-nio-8089-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'applicationName' for method parameter type String is not present]
